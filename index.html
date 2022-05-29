@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+
+<title>Hand Gesture Recognizer</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body>
+
+<center>
+
+<h3 class="btn btn-warning title">Hand Gesture Recognizer App
+    <br>
+    <span> &#9996 </span> 
+    <span> &#128076 </span> 
+    <span> &#128077 </span>
+    <span> &#128075 </span>
+    <span> &#128078 </span>
+    <span> &#128079  </span>
+</h3>
+
+</center>
+<br>
+<br>
+
+<center>
+    
+<div class="col-md-4 col-sm-12 col-xs-12 btn btn-warning" id="Web_cam_view_area">
+    <label>WebCam View;</label>
+    <br>
+    <br>
+    <center>
+    <div id="camera"></div>
+   </center>
+    <br>
+    <button onclick="take_snapshot()" class="btn btn-warning"> Take Snapshot </button>
+</div>
+</center>
+
+<center>
+    <div class="col-md-4 col-sm-12 col-xs-12" id="Prediction1">
+        <label>Prediction; </label>
+        <p class="hand_gesture_name" id="result_hand_gesture_name"></p>
+        <p class="emoji" id="updating_emoji1"></p>
+  
+       
+            <label>Prediction; </label>
+            <p class="hand_gesture_name" id="result_hand_gesture_name2"></p>
+            <p class="emoji" id="updating_emoji2"></p>
+        </center>
+    </div>
+
+<center>
+<div class="col-md-4 col-sm-12 col-xs-12 btn btn-warning" id="Snapshot_area">
+    <label>Snapshot taken;</label>
+    <br>
+    <br>
+    <center>
+        <div id="result"></div>
+    </center>
+    <br>
+    <button onclick="check()" class="btn btn-warning"> Check which symbol it is </button>
+</div>
+</center>
+
+<script src="main.js"></script>
+
+    </body>
+</html>
